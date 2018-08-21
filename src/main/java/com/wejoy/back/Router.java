@@ -17,6 +17,7 @@ public class Router {
         this.eventSearchEngine = eventSearchEngine;
     }
 
+    // Restful API, HTTP get
     @RequestMapping("/search")
     public ArrayList<Event> searchByKeyword(@RequestParam("keyword")String keyword){
         return this.eventSearchEngine.searchByKeyword(keyword);
